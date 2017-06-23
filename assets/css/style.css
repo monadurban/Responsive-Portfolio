@@ -1,0 +1,255 @@
+<!-- BEGIN CSS -->
+
+html, body { 
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 80px;
+	background-image: url("../images/background/backgroundimage.png");
+}
+.header {
+	background-color: #ffffff;
+	padding: 0;
+	width: 100%;
+	border-color: #cccccc;
+}
+
+.fullcontent {
+	flex: 1 0 auto;
+}
+
+.content {
+	width: 650px;
+	margin-top: 20px;
+}
+
+/* Header Name for all site pages. */
+.name {
+	background-color: #4aaaa5;
+	color: white;
+	text-align: center;
+	float: left;
+	font-size: 30px;
+	width: 275px;
+	font-family: 'Georgia', Times, Times New Roman, serif;
+	padding: 20px 10px;
+	margin: 30px 0px 0px 50px;
+}
+
+/*Header NavBar for all site pages. */
+.nav {
+ 	background color: #ffffff;
+ 	float: left;
+ 	display: inline-block;
+ 	color: gray;
+ 	list-style-type: none;
+ 	width: 250px
+ 	text-align: right;
+ 	font-size: 18px;
+ 	padding: 10px;
+	margin-left: 480px;
+	margin-bottom: 0px;
+	margin-top: 50px;
+	margin-right: 0px;
+ }
+
+.header:before,
+.header:after {
+  content: "";
+  display: table;
+}
+.header:after {
+  clear: both;
+}
+.header {
+  clear: both;
+  *zoom: 1;
+}
+
+/* Main content section for About Me. */
+.About {
+	float: center;
+	color: #4aaaa5;
+	background: white;
+}
+
+ a {
+ 	color: gray;
+ 	text-decoration: none;
+ }
+
+ .container {
+ 	width: 650px
+ 	margin: 0 auto;
+ 	margin-top: 20px;
+ }
+
+/* Short personal bio on About page. */
+ .main-bio {
+	float: left;
+	width: 650px;
+	border: 2px solid #dddddd;
+	padding: 14px;
+	margin-left: 50px;
+	background-color: #ffffff;
+}
+
+p {
+	font-size: 17px;
+	font-color: #777777;
+}
+
+h2 {
+	color: #4aaaa5;
+	font-size: 30px;
+	margin: 10px 10px 10px 5px;
+	padding-bottom: 10px;
+	border-bottom: 2px solid #dddddd;
+}	
+
+/* Headshot of me for About page. */
+ .bio-image img {
+ 	margin: 0;
+ 	width: 200px;
+ 	height: 200px;
+ 	float: left;
+ 	display: inline-block;
+ }
+
+/* Form for Contact page. */
+.form {
+    margin-right: 10px;
+    margin-left: 50px;
+    border-right: 1px #dddddd;
+    padding: 14px;
+    overflow: hidden;
+    width: 650px;
+    float: left;
+    display: inline-block;
+    border: 2px solid #dddddd;
+    font-size: 20px;
+    color: gray;
+    margin-left: 50px;
+    background-color: #ffffff;
+}
+
+/* Size of input fields in form. */
+input {
+	height: 30px;
+	width: 500px;
+}
+
+/* Titles for input form fields. */
+label {
+	font-size: 20px;
+}
+
+/* Submit button on Form */
+.submit button {
+	background-color: #4aaaa5;
+	color: white;
+	font-size: larger;
+}
+
+/* Social Media navbar for all site pages. */
+.social-info {
+	position: absolute;
+	list-style-type: none;
+	width: 270px;
+	height: 170px;
+	padding: 14px;
+	border: 2px solid #dddddd;
+	text-align: center;
+	margin-left: 100px;
+	display: inline-block;
+	background-color: #ffffff;
+}
+
+/* Container class for main content on Portfolio page. */
+.portfolio {
+	border: 2px solid #dddddd;
+	width: 650px;
+	float: left;
+	padding: 10px 10px 10px 10px;
+	text-align: justify;
+	clear: both;
+	margin-left: 50px;
+	background-color: #ffffff;
+}
+
+.portfolio figure {
+	padding: 10px;
+	margin: 2em;
+	width: 200px;
+	display: inline-block;
+}
+
+/* Class for text banners on images in Portfolio page. */
+figcaption {
+	text-align: center;
+	padding: 10px 20px;
+	position: relative;
+	top: -60px;
+	color: white;
+	background: #4aaaa5;
+	font: bold 16px Serif;
+}
+
+/* Style elements applied to list items. */
+li {
+	color: gray;
+	display: inline-block;
+	list-style-type: none;
+	font-size: 25px;
+}
+
+/* Font Awesome icon for GitHub. */
+.fa-github-square {
+	color: black;
+}
+
+/* Font Awesome icon for LinkedIn. */
+.fa-linkedin-square {
+	color: blue;
+}
+
+/* Font Awesome icon for Stack Overflow. */
+.fa-stack-overflow {
+	background: orange;
+	color: white;
+	border-radius: 25px;
+}
+
+.content:before,
+.content:after {
+  content: "";
+  display: table;
+}
+.content:after {
+  clear: both;
+}
+.content {
+  clear: both;
+  *zoom: 1;
+}
+
+/* Footer for all site pages. */
+.site-footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	height: 50px;
+	width: 100%;
+	font-style: "Arial", "Helvetica Neue", Helvetica, sans-serif;
+	text-align: center;
+	background: #666666;
+	padding-top: 28px;
+	font-size: 18px;
+	color: lightgray;
+	border-top: 10px solid #4aaaa5;
+}
+
+<!-- END CSS -->
