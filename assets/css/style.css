@@ -9,7 +9,9 @@ body {
 	flex-direction: column;
 	margin-bottom: 80px;
 	background-image: url("../images/background/backgroundimage.png");
+	/*width: 980px;*/
 }
+
 .header {
 	background-color: #ffffff;
 	padding: 0;
@@ -19,10 +21,11 @@ body {
 
 .fullcontent {
 	flex: 1 0 auto;
+	width: 100%;
 }
 
 .content {
-	width: 650px;
+	width: 960px;
 	margin-top: 20px;
 }
 
@@ -35,8 +38,8 @@ body {
 	font-size: 30px;
 	width: 275px;
 	font-family: 'Georgia', Times, Times New Roman, serif;
-	padding: 20px 10px;
-	margin: 30px 0px 0px 50px;
+	padding: 20px 5px;
+	margin: 5px 0px 0px 15px;
 }
 
 /*Header NavBar for all site pages. */
@@ -46,11 +49,11 @@ body {
  	display: inline-block;
  	color: gray;
  	list-style-type: none;
- 	width: 250px
+ 	width: 43%;
  	text-align: right;
- 	font-size: 18px;
- 	padding: 10px;
-	margin-left: 480px;
+ 	font-size: 20px;
+ 	padding: 5px 5px 5px 5px;
+	margin-left: 0px;
 	margin-bottom: 0px;
 	margin-top: 50px;
 	margin-right: 0px;
@@ -79,6 +82,8 @@ body {
  a {
  	color: gray;
  	text-decoration: none;
+ 	font-size: 24px;
+ 	display: inline-block;
  }
 
  .container {
@@ -90,10 +95,10 @@ body {
 /* Short personal bio on About page. */
  .main-bio {
 	float: left;
-	width: 650px;
+	width: 650px; 
 	border: 2px solid #dddddd;
-	padding: 14px;
-	margin-left: 50px;
+	padding: 2px;
+	margin-left: 10px;
 	background-color: #ffffff;
 }
 
@@ -108,6 +113,7 @@ h2 {
 	margin: 10px 10px 10px 5px;
 	padding-bottom: 10px;
 	border-bottom: 2px solid #dddddd;
+	margin-left: 10px;
 }	
 
 /* Headshot of me for About page. */
@@ -121,10 +127,9 @@ h2 {
 
 /* Form for Contact page. */
 .form {
-    margin-right: 10px;
-    margin-left: 50px;
-    border-right: 1px #dddddd;
-    padding: 14px;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 10px;
     overflow: hidden;
     width: 650px;
     float: left;
@@ -132,14 +137,13 @@ h2 {
     border: 2px solid #dddddd;
     font-size: 20px;
     color: gray;
-    margin-left: 50px;
     background-color: #ffffff;
 }
 
 /* Size of input fields in form. */
 input {
 	height: 30px;
-	width: 500px;
+	width: 400px;
 }
 
 /* Titles for input form fields. */
@@ -156,14 +160,14 @@ label {
 
 /* Social Media navbar for all site pages. */
 .social-info {
-	position: absolute;
+	float: left;
 	list-style-type: none;
 	width: 270px;
 	height: 170px;
-	padding: 14px;
+	padding: 5px;
 	border: 2px solid #dddddd;
 	text-align: center;
-	margin-left: 100px;
+	margin-left: 8px;
 	display: inline-block;
 	background-color: #ffffff;
 }
@@ -173,15 +177,15 @@ label {
 	border: 2px solid #dddddd;
 	width: 650px;
 	float: left;
-	padding: 10px 10px 10px 10px;
+	padding: 0px;
 	text-align: justify;
 	clear: both;
-	margin-left: 50px;
+	margin-left: 10px;
 	background-color: #ffffff;
 }
 
 .portfolio figure {
-	padding: 10px;
+	padding: 0px;
 	margin: 2em;
 	width: 200px;
 	display: inline-block;
@@ -190,7 +194,7 @@ label {
 /* Class for text banners on images in Portfolio page. */
 figcaption {
 	text-align: center;
-	padding: 10px 20px;
+	padding: 10px;
 	position: relative;
 	top: -60px;
 	color: white;
@@ -250,6 +254,103 @@ li {
 	font-size: 18px;
 	color: lightgray;
 	border-top: 10px solid #4aaaa5;
+}
+
+/* Media queries */
+@media only screen and (max-width: 980px) {
+	body {
+		/*background-image: none;
+		background-color: purple;*/
+	}
+	
+	/* Set main bio on About page to specific percentage. */
+	.main-bio {
+		padding 10px;
+		width: 60%;
+	}
+
+	/* Set form on Contact page to specific percentage. */
+	.form {
+		padding: 10px;
+		width: 55%;
+	}
+
+	/* Set portfolio section to specific percentage. */
+	.portfolio {
+		padding: 10px;
+		width: 55%;
+	}
+
+	/*Set the social-info class to a specific pixel size. */
+	.social-info {
+		width: 270px;
+		margin-top: 10px;
+		margin-left: 8px;
+	}
+}
+
+@media only screen and (max-width: 760px ) {
+	body { 
+		/*background-image: none; 
+		background-color: green;*/
+	}
+	/* Set the main bio to a specific width. */
+	.main-bio {
+		width: 60%;
+	}
+
+	/* Set the form to a specific width. */
+	.form {
+		width: 60%;
+	}
+
+	.portfolio {
+		width:60%;
+	}
+
+	.social-info {
+		margin-top: 20px;
+		width: 60%;
+	}
+
+	.nav {
+		text-align: center;	
+		margin-left: 50px;
+	}	
+}
+@media only screen and (max-width: 640px ) {
+	body {
+		/*background-image: none; 
+		background-color: blue;*/
+	}
+
+	.header {
+		position: static;
+	}
+
+	.nav {
+		text-align: center;
+		margin-left: 50px;
+	}
+
+	/* Set main bio to smaller percentage width. */
+	.main-bio {
+		width: 50%;
+	}
+	
+	/*Set form to smaller percentage width. */
+	.form {
+		width: 50%;
+	}
+	/* Set portfolio to smaller percentage width. */
+	.portfolio {
+		width: 50%;
+	}
+
+	.social-info {
+		width: 50%;
+		margin-top: 20px;
+	}
 }
 
 <!-- END CSS -->
